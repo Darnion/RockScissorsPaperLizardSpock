@@ -71,6 +71,8 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+
+    @SuppressLint("SetTextI18n")
     fun btnGameClicked(view: View) {
         if (userPick != "")
         {
@@ -119,9 +121,9 @@ class MainActivity : AppCompatActivity() {
                 loseCounter++
             }
 
-            winCounterLabel.text = "Побед: ${winCounter}"
-            loseCounterLabel.text = "Поражений: ${loseCounter}"
-            drawCounterLabel.text = "Ничей: ${drawCounter}"
+            winCounterLabel.text = "Побед: $winCounter"
+            loseCounterLabel.text = "Поражений: $loseCounter"
+            drawCounterLabel.text = "Ничей: $drawCounter"
         }
         else
         {
